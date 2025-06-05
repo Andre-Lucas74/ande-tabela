@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umidade do Sol</title>
+    <title>Dados Interativos do Mar e Sol</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Umidade do Sol</h1>
+        <h1>Dados Interativos do Mar e Sol</h1>
         <table>
             <thead>
                 <tr>
                     <th>Localização</th>
-                    <th>Umidade (%)</th>
-                    <th>Data</th>
+                    <th>Nível do Mar (cm)</th>
+                    <th>Umidade do Mar (%)</th>
+                    <th>Umidade do Sol (%)</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="data-table">
                 <tr>
                     <td>São Paulo</td>
+                    <td>50</td>
+                    <td>80</td>
                     <td>75</td>
-                    <td>05/06/2025</td>
                 </tr>
                 <tr>
                     <td>Rio de Janeiro</td>
+                    <td>60</td>
+                    <td>85</td>
                     <td>80</td>
-                    <td>05/06/2025</td>
                 </tr>
                 <tr>
                     <td>Curitiba</td>
+                    <td>40</td>
                     <td>70</td>
-                    <td>05/06/2025</td>
+                    <td>70</td>
                 </tr>
             </tbody>
         </table>
+        <button id="update-button">Atualizar Dados</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
